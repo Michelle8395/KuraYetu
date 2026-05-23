@@ -1,37 +1,48 @@
-````markdown
-# 🗳️ Digital School Election System
+# KuraYetu
 
-A secure, transparent, and modern web-based election platform designed for junior secondary school student elections using a **secret ballot voting system**.
-
-The system enables schools to conduct elections digitally while maintaining fairness, confidentiality, accountability, and election integrity.
-
-Unlike traditional paper-based elections, this platform automates voting, vote counting, turnout tracking, and result generation in real time.
-
-Because apparently even school elections now require distributed systems thinking, authentication flows, and database security policies. Civilization continues its strange march.
+A secure, transparent digital school election platform built on secret ballot voting for fair and accountable student leadership elections.
 
 ---
 
-# 📌 Project Overview
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-active_development-blue)
+![Backend](https://img.shields.io/badge/backend-Supabase-3ecf8e)
+![Frontend](https://img.shields.io/badge/frontend-React-61dafb)
+![Database](https://img.shields.io/badge/database-PostgreSQL-316192)
+![Deploy](https://img.shields.io/badge/deploy-Vercel-black)
+![Votes](https://img.shields.io/badge/voting-secret_ballot-important)
 
-The Digital School Election System is a full-stack web application that allows students to securely vote for school leadership positions through a confidential electronic ballot.
+---
+
+KuraYetu is a secure, transparent, and modern digital election platform designed for junior secondary school student elections using a secret ballot voting system.
+
+The platform enables schools to conduct elections digitally while maintaining fairness, confidentiality, accountability, and election integrity.
+
+Unlike traditional paper-based voting systems, KuraYetu automates voting, vote counting, turnout tracking, and result publishing in real time, creating a more efficient and engaging election experience for students and administrators.
+
+---
+
+# Project Overview
+
+KuraYetu is a full-stack web application that allows students to securely vote for school leadership positions through a confidential electronic ballot.
 
 The platform is designed to:
 - eliminate manual counting errors,
 - improve election transparency,
 - prevent duplicate voting,
 - speed up result processing,
-- and modernize student elections.
+- and modernize school elections.
 
-The system follows the principles of:
-- **secret ballots**
-- **fair elections**
-- **real-time monitoring**
-- **secure authentication**
-- **transparent result publication**
+KuraYetu follows the principles of:
+- secret ballot voting,
+- fair elections,
+- secure authentication,
+- real-time monitoring,
+- and transparent result publication.
 
 ---
 
-# 🎯 Objectives
+# Objectives
 
 ## Main Objective
 To develop a secure and transparent digital election platform for junior secondary schools.
@@ -47,50 +58,48 @@ To develop a secure and transparent digital election platform for junior seconda
 
 ---
 
-# 🚨 Problem Statement
+# Problem Statement
 
-Traditional school elections often face multiple challenges:
+Traditional school elections often face several challenges, including:
+- manual counting errors,
+- delayed result announcements,
+- lack of transparency,
+- spoiled or lost ballot papers,
+- difficult turnout tracking,
+- and the possibility of bias or manipulation.
 
-- Manual counting errors
-- Delayed result announcements
-- Lack of transparency
-- Spoiled or lost ballot papers
-- Difficult turnout tracking
-- Possibility of bias or manipulation
-- Peer pressure during public voting
-
-This project solves these issues through a secure digital election system with automated vote management and private voting.
+KuraYetu addresses these challenges through a secure digital voting system with automated vote management and confidential voting.
 
 ---
 
-# ✨ Core Features
+# Core Features
 
-# 👨‍🎓 Student Features
+# Student Features
 
-## 🔐 Secure Authentication
+## Secure Authentication
 Students log in using:
 - Admission Number / Student ID
 - Unique PIN or Password
 
 This ensures:
-- one student = one vote,
+- one student can vote only once,
 - authenticated access,
 - and prevention of impersonation.
 
 ---
 
-## 🗳️ Secret Ballot Voting
+## Secret Ballot Voting
 Students can:
 - view available positions,
 - review candidates,
 - cast votes privately,
 - and submit ballots securely.
 
-Votes are anonymous and cannot be modified after submission.
+Votes remain anonymous and cannot be modified after submission.
 
 ---
 
-## 👤 Candidate Profiles
+## Candidate Profiles
 Each candidate profile contains:
 - Full Name
 - Photo
@@ -100,21 +109,21 @@ Each candidate profile contains:
 
 ---
 
-## 📱 Mobile-Friendly Voting
-The system is optimized for:
+## Mobile-Friendly Voting
+The platform is optimized for:
 - smartphones,
 - tablets,
 - laptops,
 - and desktop devices.
 
-Because if students can survive TikTok on low-end Android phones, your app has no excuse for loading like a government portal from 2009.
+This ensures accessibility and ease of use across different devices.
 
 ---
 
-# 👨‍💼 Admin Features
+# Admin Features
 
-## 📋 Election Management
-Admins can:
+## Election Management
+Administrators can:
 - create elections,
 - add leadership positions,
 - register candidates,
@@ -122,7 +131,7 @@ Admins can:
 
 ---
 
-## 📊 Real-Time Monitoring
+## Real-Time Monitoring
 Admins can monitor:
 - total votes cast,
 - turnout percentages,
@@ -131,7 +140,7 @@ Admins can monitor:
 
 ---
 
-## 🔒 Open / Close Voting
+## Open and Close Voting
 Administrators can:
 - activate elections,
 - pause voting,
@@ -139,7 +148,7 @@ Administrators can:
 
 ---
 
-## 📈 Results Dashboard
+## Results Dashboard
 After polls close, the system automatically displays:
 - total votes,
 - candidate rankings,
@@ -149,30 +158,30 @@ After polls close, the system automatically displays:
 
 ---
 
-# ⚖️ Election Integrity Principles
+# Election Integrity Principles
 
-The platform follows several important election rules:
+KuraYetu follows several important election principles:
 
-## ✅ Secret Ballot
+## Secret Ballot
 No voter can see how another student voted.
 
-## ✅ One Vote Per Position
+## One Vote Per Position
 Students cannot vote multiple times for the same position.
 
-## ✅ No Live Candidate Scores During Voting
+## No Live Candidate Scores During Voting
 The system intentionally avoids displaying live candidate rankings during active voting.
 
-This prevents:
-- herd voting,
-- popularity influence,
+This helps prevent:
 - peer pressure,
+- popularity influence,
+- herd voting,
 - and biased decision-making.
 
-Instead, only turnout statistics are displayed during voting.
+Instead, only voter turnout statistics are displayed during active elections.
 
 ---
 
-# 🛠️ Tech Stack
+# Tech Stack
 
 # Frontend
 
@@ -203,11 +212,11 @@ Instead, only turnout statistics are displayed during voting.
 | Platform | Purpose |
 |---|---|
 | Vercel | Frontend hosting |
-| Supabase Cloud | Database and backend hosting |
+| Supabase Cloud | Backend and database hosting |
 
 ---
 
-# 🏗️ System Architecture
+# System Architecture
 
 ```text
 Students/Admin
@@ -217,14 +226,14 @@ React Frontend
 Supabase API Layer
        ↓
 PostgreSQL Database
-````
+```
 
 ---
 
-# 🗂️ Proposed Folder Structure
+# Proposed Folder Structure
 
 ```bash
-digital-school-election-system/
+kurayetu/
 │
 ├── public/
 │
@@ -251,110 +260,104 @@ digital-school-election-system/
 
 ---
 
-# 🗄️ Database Design
+# Database Design
 
 # students
 
-| Field        | Type      |
-| ------------ | --------- |
-| id           | UUID      |
-| name         | TEXT      |
-| admission_no | TEXT      |
-| class        | TEXT      |
-| created_at   | TIMESTAMP |
+| Field | Type |
+|---|---|
+| id | UUID |
+| name | TEXT |
+| admission_no | TEXT |
+| class | TEXT |
+| created_at | TIMESTAMP |
 
 ---
 
 # elections
 
-| Field      | Type      |
-| ---------- | --------- |
-| id         | UUID      |
-| title      | TEXT      |
-| status     | TEXT      |
+| Field | Type |
+|---|---|
+| id | UUID |
+| title | TEXT |
+| status | TEXT |
 | created_at | TIMESTAMP |
 
 ---
 
 # positions
 
-| Field       | Type |
-| ----------- | ---- |
-| id          | UUID |
-| title       | TEXT |
+| Field | Type |
+|---|---|
+| id | UUID |
+| title | TEXT |
 | election_id | UUID |
 
 ---
 
 # candidates
 
-| Field       | Type |
-| ----------- | ---- |
-| id          | UUID |
-| name        | TEXT |
+| Field | Type |
+|---|---|
+| id | UUID |
+| name | TEXT |
 | position_id | UUID |
-| manifesto   | TEXT |
-| image_url   | TEXT |
+| manifesto | TEXT |
+| image_url | TEXT |
 
 ---
 
 # votes
 
-| Field        | Type      |
-| ------------ | --------- |
-| id           | UUID      |
-| student_id   | UUID      |
-| candidate_id | UUID      |
-| position_id  | UUID      |
-| created_at   | TIMESTAMP |
+| Field | Type |
+|---|---|
+| id | UUID |
+| student_id | UUID |
+| candidate_id | UUID |
+| position_id | UUID |
+| created_at | TIMESTAMP |
 
 ---
 
-# 🔐 Security Features
+# Security Features
 
-The system includes several security measures to protect election integrity.
+The platform includes several security measures to protect election integrity.
 
 ## Authentication
-
-* Secure student login
-* Session management
-* Protected admin access
+- Secure student login
+- Session management
+- Protected admin access
 
 ## Database Protection
-
-* Row Level Security (RLS)
-* Restricted write permissions
-* Server-side validation
+- Row Level Security (RLS)
+- Restricted write permissions
+- Server-side validation
 
 ## Election Protection
-
-* Duplicate vote prevention
-* Vote anonymization
-* Audit logging
-* Controlled result publication
+- Duplicate vote prevention
+- Vote anonymization
+- Audit logging
+- Controlled result publication
 
 ---
 
-# 📡 Real-Time Features
+# Real-Time Features
 
 Using Supabase Realtime:
+- turnout updates automatically,
+- admin dashboards refresh live,
+- and election activity syncs instantly.
 
-* turnout updates automatically,
-* admin dashboards refresh live,
-* election activity syncs instantly.
-
-Live candidate scores are intentionally hidden until polls close.
-
-Because transparency does not mean turning elections into live sports betting.
+Live candidate scores remain hidden until voting officially closes.
 
 ---
 
-# 🚀 Installation & Setup
+# Installation & Setup
 
 # 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/digital-school-election-system.git
+git clone https://github.com/your-username/kurayetu.git
 ```
 
 ---
@@ -362,7 +365,7 @@ git clone https://github.com/your-username/digital-school-election-system.git
 # 2. Navigate Into the Project
 
 ```bash
-cd digital-school-election-system
+cd kurayetu
 ```
 
 ---
@@ -394,97 +397,86 @@ npm run dev
 
 ---
 
-# 📦 Future Improvements
+# Future Improvements
 
 Potential future upgrades include:
-
-* QR Code voting
-* Biometric authentication
-* SMS notifications
-* Printable election reports
-* Multi-school election support
-* Offline-first voting mode
-* AI-powered election analytics
-* Parent observer dashboards
-
-Not necessary for MVP though. Humans consistently mistake “more features” for “better software.” Most successful systems are just disciplined restraint wearing clean UI.
+- QR Code voting
+- Biometric authentication
+- SMS notifications
+- Printable election reports
+- Multi-school election support
+- Offline voting mode
+- Election analytics dashboard
+- Parent observer dashboards
 
 ---
 
-# 🧪 Testing
+# Testing
 
 Planned testing includes:
-
-* Unit Testing
-* Authentication Testing
-* Database Validation Testing
-* Load Testing
-* Security Testing
-* UI Responsiveness Testing
+- Unit Testing
+- Authentication Testing
+- Database Validation Testing
+- Load Testing
+- Security Testing
+- UI Responsiveness Testing
 
 ---
 
-# 📱 User Experience Goals
+# User Experience Goals
 
 The platform is designed to be:
+- simple,
+- fast,
+- intuitive,
+- accessible,
+- and mobile-first.
 
-* simple,
-* fast,
-* intuitive,
-* accessible,
-* and mobile-first.
-
-Special focus is placed on younger users with:
-
-* clear navigation,
-* large touch targets,
-* readable interfaces,
-* and minimal complexity.
+Special focus is placed on younger users through:
+- clear navigation,
+- large touch targets,
+- readable interfaces,
+- and minimal complexity.
 
 ---
 
-# 🌍 Potential Impact
+# Potential Impact
 
-The system can help schools:
+KuraYetu can help schools:
+- modernize elections,
+- improve trust,
+- encourage student participation,
+- reduce administrative workload,
+- and expose students to responsible democratic processes.
 
-* modernize elections,
-* improve trust,
-* encourage participation,
-* reduce administrative workload,
-* and expose students to responsible democratic processes.
-
-Students gain firsthand experience with:
-
-* accountability,
-* digital governance,
-* and fair leadership systems.
+Students also gain firsthand experience with:
+- accountability,
+- digital governance,
+- and fair leadership systems.
 
 ---
 
-# 📄 License
+# License
 
 This project is licensed under the MIT License.
 
 ---
 
-# 👥 Contributors
+# Contributors
 
 Developed by:
-
-* Your Team Name Here
+- Your Team Name Here
 
 Contributors:
-
-* Add contributor names here
+- Add contributor names here
 
 ---
 
-# 🤝 Contribution Guidelines
+# Contribution Guidelines
 
 Contributions are welcome.
 
 To contribute:
-
 1. Fork the repository
 2. Create a feature branch
 3. Commit your changes
@@ -493,33 +485,28 @@ To contribute:
 
 ---
 
-# 📌 Project Status
+# Project Status
 
-🚧 Active Development
+Active Development
 
-The project is currently in the MVP development stage.
-
----
-
-# 📷 Planned Screens
-
-* Login Screen
-* Student Dashboard
-* Candidate Listing
-* Voting Page
-* Vote Confirmation Page
-* Admin Dashboard
-* Results Dashboard
+KuraYetu is currently in the MVP development stage.
 
 ---
 
-# 🏁 Conclusion
+# Planned Screens
 
-The Digital School Election System aims to provide schools with a modern, secure, and transparent election experience while preserving the integrity of democratic participation through secret ballot voting.
+- Login Screen
+- Student Dashboard
+- Candidate Listing
+- Voting Page
+- Vote Confirmation Page
+- Admin Dashboard
+- Results Dashboard
 
-By combining secure authentication, automated vote counting, real-time monitoring, and a user-friendly interface, the system creates a scalable solution suitable for modern educational institutions.
+---
 
-Because if students are expected to become future leaders, the least adults can do is stop making them elect prefects using folded paper and chaos.
+# Conclusion
 
-```
-```
+KuraYetu aims to provide schools with a modern, secure, and transparent election experience while preserving the integrity of democratic participation through secret ballot voting.
+
+By combining secure authentication, automated vote counting, real-time monitoring, and a user-friendly interface, the platform creates a scalable solution suitable for modern educational institutions.
